@@ -40,7 +40,7 @@ program define readstatalist
 					gen x1 = fileread("`=url[`i']'") in 1
 					egen x2 = ends(x1), p(`"itemprop="text">"') tail
 					egen x = ends(x2), p(`"<!-- REPLY -->"') head
-					replace x = ustrregexra(x,"<.*>","")
+					replace x = ustrregexra(x,"<.*?>","")
 					replace x = ustrtrim(x)
 					noisily di `"`i': {browse "`=url[`i']'":`=subject[`i']'}"' 
 					noisily di x[1]
@@ -51,7 +51,7 @@ program define readstatalist
 					gen x1 = fileread("`=url[`i']'") in 1
 					egen x2 = ends(x1), p(`"itemprop="text">"') tail
 					egen x = ends(x2), p(`"<!-- REPLY -->"') head
-					replace x = ustrregexra(x,"<.*>","")
+					replace x = ustrregexra(x,"<.*?>","")
 					replace x = ustrtrim(x)
 					noisily di `"`i': {browse "`=url[`i']'":`=subject[`i']'}"' 
 					noisily di "Replies: `=post[`i']'"
