@@ -16,9 +16,9 @@ An internet connection is required.
 {marker options}{...}
 {title:Options}
 
-{opt unanswered} displays only questions which do not have replies.
+{opt unanswered} displays only posts which do not have replies.
 
-{opt post} displays the full post.
+{opt post} displays the full post(s).
 
 {hline}
 
