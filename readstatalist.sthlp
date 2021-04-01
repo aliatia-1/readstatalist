@@ -1,6 +1,6 @@
 {smcl}
 {p2col:{bf: readstatalist}}
-{hline}
+
 
 {marker syntax}{...}
 {title:Syntax}
