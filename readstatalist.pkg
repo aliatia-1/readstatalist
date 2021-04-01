@@ -1,0 +1,10 @@
+v 3
+
+d readstatatlist
+d
+d Written by Ali Atia
+d
+d Browse the Statalist forum from Stata
+
+f readstatalist.ado
+f readstatalist.sthlp
